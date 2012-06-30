@@ -2,8 +2,13 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-app.get('/', function(request, response) {
-  response.send('Hello World!');
+app.configure(function(){
+
+  app.use(express.bodyParser());
+  app.use(express.methodOverride());
+  app.use(express.cookieParser());
+
+  app.use(express.static( __dirname + '/'));
 });
 
 var port = process.env.PORT || 5000;
