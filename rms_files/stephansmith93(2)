@@ -1,0 +1,6 @@
+if (typeof window.Delicious == 'undefined') window.Delicious = {};
+Delicious.Linkrolls_CB_13563 = function(posts) {
+Delicious.Linkrolls.writeln({"count": "10", "sort": "date", "name": true, "bullet": "&#149;", "tags": true, "usertags": false, "title": "My Delicious Bookmarks", "BASE_URL": "http://www.delicious.com/", "STATIC_URL": "http://www.delicious.com/static/", "version": 2, "user": "stephansmith93", "showadd": true, "icon": "s"}, posts);
+};
+document.writeln('<scr'+'ipt type="text/javascript" src="http://www.delicious.com/static/js/del-linkrolls.js"></scr'+'ipt>');
+document.writeln('<scr'+'ipt type="text/javascript" src="http://feeds.delicious.com/v2/json/stephansmith93?count=10&callback=Delicious.Linkrolls_CB_13563"></scr'+'ipt>');

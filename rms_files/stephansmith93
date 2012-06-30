@@ -1,0 +1,6 @@
+if (typeof window.Delicious == 'undefined') window.Delicious = {};
+Delicious.Tagrolls_CB_69973 = function(posts) {
+Delicious.Tagrolls.writeln({"count": "100", "sort": "alpha", "title": "My Delicious Tags", "color": "73adff-3274d0", "flow": "cloud", "BASE_URL": "http://www.delicious.com/", "STATIC_URL": "http://www.delicious.com/static/", "user": "stephansmith93", "size": "13-20"}, posts);
+};
+document.writeln('<scr'+'ipt type="text/javascript" src="http://www.delicious.com/static/js/del-tagrolls.js"></scr'+'ipt>');
+document.writeln('<scr'+'ipt type="text/javascript" src="http://feeds.delicious.com/v2/json/tags/stephansmith93?count=100&callback=Delicious.Tagrolls_CB_69973"></scr'+'ipt>');
